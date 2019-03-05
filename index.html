@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Lewis Hall, a final year student at Manchester Metropolitan University studying web development.">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript, MMU, Graduate, Web Developer, Lewis Hall, Manchester, Blackpool">
+  <meta name="author" content="Lewis Hall">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png"/>
+  <title>Lewis Hall - Portfolio</title>
+</head>
+
+
+<body id="content">
+<a href="#content" class="skip" title="Skip to content">Skip to content</a>
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <a href="../index.html" class="logo"></a>
+  
+    <ul class="main-nav" id="js-menu">
+      <li><a href="index.html" class="nav-links">Home</a></li>
+      <li><a href="#about" class="nav-links">About</a></li>
+      <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+      <li><a href="#blog" class="nav-links">Blogs</a></li>
+      <li><a href="pages/cv.html" class="nav-links">CV</a></li>
+      <li><a href="#contactform" class="nav-links">Contact Me</a></li>
+      </ul>
+      <script src="js/nav.js"></script>   
+    </nav>
+
+
+<div class="landing">
+    <div class="homepage">
+      <h1 class="homename">
+         Lewis
+        <span>Hall.</span>
+      </h1>
+
+      <p class="occupation">Front End Web Developer</p>
+      <p class="location">Blackpool, UK</p>
+
+      <form class="homebutton CV" style="vertical-align:middle" action="pages/cv.html" method="get">
+          <button><span>My CV</span></button>
+      </form>
+
+      <form class="homebutton contact" style="vertical-align:middle" action="mailto:16021537@stu.mmu.ac.uk" method="get">
+        <button><span>Contact Me</span></button>
+      </form>
+
+     </div>
+    
+
+  <img class="blackpool" src="images/blackpoolsvg.svg" alt="Animated Blackpool city skyline SVG." />
+  <div class="seperator-one"></div> 
+</div> 
+
+
+<!-- ABOUT ME -->
+<div id="about">
+  <h1 class="section-title">About me</h1>
+  <h1 class="introduction">Hi I'm Lewis & I'm a Front-End web developer from Blackpool</h1>
+  <p>
+
+    I am currently a final year student at <a class="links" href="https://www2.mmu.ac.uk/" title="Manchester Metroplitian University">Manchester Metropolitan University</a> studying website development.
+    My passion is to develop beautiful and responsive websites, whilst using best practices and the latest W3C web standards.
+    I specialize in front-end development and user experience using a variety of modern tools in the build process.
+    My goal when I finish my time at university is to work fully as a web developer in a team people who share the same passion as me.
+  </p>
+  <p>I am eager to start working with you! Make sure you check out my CV.</p>
+
+  <div class="social-wrap">
+    <a href="https://twitter.com/LewisHall97"><img class="social facebook" src="images/social/Twitter_Logo_WhiteOnBlue.svg" title="Twitter @LewisHall97" alt=""></a>
+    <a href="https://www.linkedin.com/in/lewis-hall-26b484130/"><img class="social linkedin" src="images/social/In-2C-34px-TM.png" title="LinkedIn" alt=""></a>
+  </div>
+</div>
+
+
+<!-- PORTFOLIO -->
+<h1 class="section-title">What I have been up to</h1>
+<div id="portfolio">
+
+  <a href="pages/portfolio-metlife.html">
+  <img class="portfolio-gallery" src="images/portfolio/MetLife-icon.jpg" title="MetLife" alt="Screencap of 'MetLife' homepage."/>
+  </a>
+
+  <a href="pages/portfolio-mylife.html">
+  <img class="portfolio-gallery" src="images/portfolio/Mylife-icon.jpg" title="MyLife, a documentary" alt="Screencap of 'MyLife' homepage">
+  </a>
+
+  <a href="pages/portfolio-northernquarter.html">
+  <img class="portfolio-gallery" src="images/portfolio/Northernquarter-icon.jpg" title="Explore Northern Quarter" alt="Screencap of 'Northern Quarter' homepage." />
+  </a>
+
+  <a href="http://www.16021537.webdevmmu.uk/WebProgramming_Task1/index.html">
+  <img class="portfolio-gallery" src="images/portfolio/Decryptor-icon.jpg" title="Decryptor" alt="Online encryptor / decrpytor" />
+  </a>
+
+  <a href="http://www.16021537.webdevmmu.uk/WebProgramming_Task2/orderForm.html">
+  <img class="portfolio-gallery" src="images/portfolio/Orderform-icon.jpg" title="Online Order Form" alt="An online shirt order form" />
+  </a>
+  
+  <a href="http://www.16021537.webdevmmu.uk/WebProgramming_Task3/index.html">
+  <img class="portfolio-gallery" src="images/portfolio/Menu-icon.jpg" title="Online Menu" alt="An online interactive restaurant menu" />
+  </a> 
+
+</div>
+
+<!-- BLOG  -->
+<div id="blog">
+  <h1 class="section-title whitesmoke">My latest blogs</h1>   
+  <div class="blog-section">
+      
+    <div class="column">
+      <a class="bloglink" href="pages/blog-industry.html"> 
+      <img class="column-image" src="images/the-digital-industry.jpg" alt="Silver laptop on a white desk .">
+      <h2>The digital industry</h2>
+      <p>A students perspective into the UK's digital industry after reading the 2018 Tech Nation report and Manchester Digital Skills Audit 2018.</p>
+      </a>
+    </div>
+    
+    <div class="column" >
+      <a class="bloglink" href="pages/blog-portfolio.html">
+      <img class="column-image" src="images/building-portfolio.png" alt="CSS code being displayed on desktop">
+      <h2>Building my portfolio</h2>
+      <p>Follow me in my journey on creating my own web portfolio. From wireframes, to designing for mobile first, to the final product. See what I have done and why I've done it.</p>
+    </a>
+    </div>
+
+    <div class="column">   
+      <a class="bloglink" href="pages/blog-optimisation.html">    
+      <img class="column-image" src="images/performance.jpg" alt="Laptop displaying statistics for a website">
+      <h2>Performance and optimisation</h2>
+      <p>The most important part of creating a website... making sure it is optimised and runs smoothly. During my time as a student I have compilied a list of steps that will make this process so much easier.</p>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- CONTACT -->  
+  <div id="contactform">
+    <h1 class="section-title">Fancy a chat?</h1>
+    <div class="contactcontainer">
+      <div class="wrapper">
+        <div class="contact">
+          <h1 class="section-title">Drop me an email</h1>
+          <form action="https://formspree.io/16021537@stu.mmu.ac.uk" method="post">
+          
+            <p class="contactname">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name" required>
+          </p>
+
+          <p class="contactemail">
+            <label>Email Address</label>
+            <input type="email" name="email">
+          </p>
+
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" name="messagetext" rows="5"></textarea>
+          </p>
+
+          <p class="full">
+              <input type="submit" name="submit" value="Submit Search">
+              <input type="reset" name="reset" value="Reset">
+            <button class="homebutton contact" style="vertical-align:middle" name="submit" type="submit"><span>Submit</span></button>
+          </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<footer>
+  <p> 
+    <a class="links" href="http://www.mmu.ac.uk/" title="MMU homepage">&copy; MMU 2018</a>
+    <span>&middot; Lewis Hall</span>
+    <span>&middot; This is student coursework</span>
+    <span>&middot; Tutor: <a class="links" href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a></span>
+    <span>&middot;<a class="links" href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></span>
+    <a class="links" href="#content">&middot; Back to the top</a>
+  </p>
+</footer>
+</body>
+</html>
