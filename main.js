@@ -18,11 +18,11 @@ if(window.Notification) {
 function showNotification() {
 
     let notificationOpts = {
-        body: 'Some notification information',
+        body: 'A new blog post has been added. Check it out!',
         icon: '/favicon.png'
     }
 
-    let n = new Notification('My new Notification.', notificationOpts);
+    let n = new Notification('New blog posts!', notificationOpts);
 
     n.onClick = () => {
         console.log('Notification Clicked')
@@ -42,3 +42,4 @@ function showNotification() {
         })
     }
 }
+

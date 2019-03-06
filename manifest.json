@@ -1,0 +1,17 @@
+{
+    "name": "Web Development Portfolio",
+    "short_name": "Portfolio",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#2d91f8",
+    "description": "Lewis Hall portfolio",
+    "icons": [
+        {
+            "src": "/icons/icon072.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        }
+    ]
+
+
+}
