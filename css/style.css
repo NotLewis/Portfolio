@@ -42,10 +42,8 @@ a.skip:hover {
 .white{background-color:#fff;}
 .whitesmoke{background-color:whitesmoke;}
 
-a:link {color: black;text-decoration: none;opacity: 1;}
-a:visited {color: black;}
-a:hover {color: black;}
-a:active {color: black;}
+
+
 a.links {color:inherit;font-weight: bold;border-bottom: 2px solid yellow;}
 a.links:visited{border-bottom: 2px coral; }
 
@@ -76,22 +74,36 @@ color: #01447e;
 text-decoration: underline;
 }
 
-/*NAVIGATION*/
+
+
+/* ############################################## */
+/*                     NAVIGATION                 */
+/* ############################################## */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-  
+
 .navbar {
   font-size: 16px;
-  background-color: rgba(85, 214, 170, 0.7);
-  padding-bottom: 25px;
-  font-weight: 100;
+  padding: 40px 0px 15px 0;
+  font-weight: 400;
+  background-color: #023a5e;
+  width: 100%; 
 }
 
-.nav-links:hover{
-  text-decoration: underline;
+
+.nav-links:hover,
+#current {
+  position: relative;
+  color: #ff00b3;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main-nav {
@@ -99,43 +111,105 @@ text-decoration: underline;
   display: none;
 }
 
-.nav-links,
-.logo {
+.nav-links {
   text-decoration: none;
-  color: #FFF;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .main-nav li {
-  text-align: center;
+  text-align: left;
   margin: 15px auto;
+  text-transform: uppercase;
+  padding: 0 25px 0 35px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.main-nav li:first-child {
+  margin-top: 15px;
 }
 
 .logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
-
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .navbar-toggle {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 53px;
+  left: 6vw;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .active {
   display: block;
 }
 
-@media screen and (min-width: 800px) {
+.nav-button {
+  background-color: #10c4c4;
+  color: #222222;
+  text-align: left;
+  margin-left: 0;
+  padding: 18px 30% 7px 9px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+  background-color: #07aaa5;
+}
+
+/* .navbar {
+  pointer-events: none;
+}  */
+
+
+
+/* prevents the whole div from containing links */
+
+/* .navbar img, .nav-links, .navbar-toggle, .nav-button {
+  pointer-events: all;
+}    */
+
+
+@media screen and (max-width: 418px) {
+  .main-nav li {
+    padding-left: 15px;
+  }
+
+  .navbar-toggle {
+    top: 37px;
+    left: 4%;
+    font-size: 18px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    margin-top: -10px;
+    width: 220px;
+  }
+}
+
+  .nav-button {
+    text-align: center;
+    padding: 10px;
+    margin: 9px 0.3vw 35px 0;
+  }
+
+
+/* FULLSCREEN */
+@media screen and (min-width: 1000px) {
   .navbar {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 0;
+    padding-bottom: 35px;
     height: 70px;
     align-items: center;
   }
@@ -148,11 +222,18 @@ text-decoration: underline;
   }
 
   .main-nav li {
+    padding-bottom: 0px;
+    border-bottom: none;
+    padding-left: 0px;
     margin: 0;
   }
 
-  .nav-links{
-    padding:25px 20px;
+  .main-nav li:first-child {
+    margin-top: 0;
+  }
+
+  .nav-links {
+    padding: 25px 20px;
   }
 
   .logo {
@@ -163,9 +244,37 @@ text-decoration: underline;
     display: none;
   }
 
+  .nav-button {
+    margin-top: -31px;
+    margin-bottom: 0;
+    position: absolute;
+    right: -6px;
+    width: 225px;
+    padding: 30px;
+  }
 }
 
-/* buttons */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* buttons need to change*/
 button{
 	background: none;
 	color: inherit;
@@ -188,27 +297,16 @@ button{
   cursor: pointer;            
   margin-top: 10px;
   }         
-   
-.homebutton.CV {
-  background-color: coral; 
-  border: none;
-  color: #FFFFFF;
-}
+.homebutton.CV {background-color: #023a5e; border: none;color: #FFFFFF;}
           
 .homebutton.contact {  
   background-color: white;
   border-style: solid;
   border-width: 1px;
-  border-color: coral; 
-  color: coral; 
+  border-color: #023a5e; 
+  color: #000000; 
 }
-      
-.homebutton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
+.homebutton span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;}
           
 .homebutton span:after {
   content: '\00bb';
@@ -227,6 +325,15 @@ button{
   opacity: 1;
   right: 0;
 } 
+
+
+
+
+
+
+
+
+
 
 
   /*homepage */
@@ -260,7 +367,7 @@ h1.homename {
 
 p.occupation { 
   font-size:15px;
-  color: coral; 
+  color: #023a5e; 
 } 
 
 p.location { 
@@ -325,22 +432,19 @@ p.location {
  }
 
 .seperator-one {
-  background-color:rgba(5, 80, 128, 0.5);
+  background-color:rgba(2, 58, 94, 0.7);
   height: 100px;
   width:100%;
   display:flex;
 }
 
 .section-title{
-  margin-top:4rem;
-  margin-bottom:1rem;
-  color: #333;
-  font-size: 35px;
-  letter-spacing: 3px;
-  line-height: 48px;
-  font-weight: 800;
-  font-style: normal;
-
+  margin: 0px;
+  padding: 3rem 0;
+  color:#023a5e;
+  font-size:40px;
+  font-weight: 600;
+  max-width: 100%;
   text-align: center;
 }
 
@@ -628,8 +732,8 @@ footer {
   background-color: white;
   border-style: solid;
   border-width: 1px;
-  border-color: coral; 
-  color: coral; 
+  border-color: #023a5e; 
+  color: #023a5e; 
   width: 140px;
   margin-bottom:25px;
   }
@@ -715,7 +819,7 @@ footer {
   padding-top: 15px;
 }
 
-.firstcharacter {color: coral;  float: left; font-family: Georgia; font-size: 75px; line-height: 60px; padding: 4px 8px 3px;;}
+.firstcharacter {color: #023a5e;  float: left; font-family: Georgia; font-size: 75px; line-height: 60px; padding: 4px 8px 3px;;}
 
 
 /* read more of my blogs */

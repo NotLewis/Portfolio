@@ -16,7 +16,8 @@
 
 <body id="content">
 <a href="#content" class="skip" title="Skip to content">Skip to content</a>
-  <nav class="navbar">
+
+  <!-- <nav class="navbar">
     <span class="navbar-toggle" id="js-navbar-toggle">
       <i class="fas fa-bars"></i>
     </span>
@@ -32,6 +33,26 @@
       <li><a href="pages/cv.html" class="nav-links">CV</a></li>
       </ul>
       <script src="js/nav.js"></script>   
+    </nav> -->
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </span>
+    
+        <a href="index.html">
+          <img class="logo" src="images/TX-Logo2.png" alt="Lewis Hall's Logo">
+        </a>
+    
+        <ul class="main-nav" id="js-menu">
+          <li><a href="index.html" class="nav-links" id="current">Home</a></li>
+          <li><a href="#about" class="nav-links">About</a></li>
+          <li><a href="#latest-project" class="nav-links">Projects</a></li>
+          <li><a href="#blog" class="nav-links">Blogs</a></li>
+          <li><a href="#contact" class="nav-links">Contact</a></li>
+          <li><a href="" class="nav-button">CV</a></li>
+        </ul>
+        <script src="javascript/nav.js"></script>
     </nav>
 
 
@@ -89,10 +110,8 @@
 
 
 <!-- PORTFOLIO -->
+<!-- <h1 class="section-title">Recent projects</h1>
 <div id="portfolio">
-<h1 class="section-title">Recent projects</h1>
-
-
   <a href="pages/portfolio-metlife.html">
   <img class="portfolio-gallery" src="images/portfolio/MetLife-icon.jpg" title="MetLife" alt="Screencap of 'MetLife' homepage."/>
   </a>
@@ -116,8 +135,160 @@
   <a href="http://www.16021537.webdevmmu.uk/WebProgramming_Task3/index.html">
   <img class="portfolio-gallery" src="images/portfolio/Menu-icon.jpg" title="Online Menu" alt="An online interactive restaurant menu" />
   </a> 
+</div> -->
+
+<div id="latest-project" class="project-container">
+  <h1 class="section-title">Recent projects</h1>
+
+  <div class="project-row">
+    <div class="project-column">
+      <img class="project-img" src="https://via.placeholder.com/635x540" title="MetLife" alt="Metlife Screenhot"/>
+    </div>
+
+  <div class="project-column project-column-text">
+    <h2 class="project-title">Trixerbell re-design</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatum fugit eius repellat officia,  hic 
+        cupiditate alias voluptates laudantium ipsum ea,ratione ullam, est facilis! Quisquam praesentium ullam 
+        autem sed totam architecto ipsum, soluta nobis dolores laudantium dolorem eius quos!</p>
+    <ul>
+      <li>HTML / CSS / Javascript</li>
+      <li>Project management</li>
+      <li>Agile</li>
+      <li>Working with a client</li>
+    </ul>
+    <a class="project-btn" href="">Project site</a>
+  </div> 
+  </div> 
+
+
+
+  <div class="project-row">
+      <div class="project-column">
+          <h2 class="project-title">Encryptor / Decryptor</h2>
+          <p>As part of my unviersity course we were put into groups of 6 to create a high 
+              fidelity working prototype of a digital project of our choice. We decided to create a guide aimed 
+              towards students coming to university for the first time. </p>
+          <ul>
+            <li>HTML / CSS / Javascript</li>
+            <li>Project management</li>
+            <li>Agile</li>
+          </ul>
+          <a class="project-btn" href="">Project site</a>
+        </div> 
+  
+    <div class="project-column">
+        <img class="project-img" src="https://via.placeholder.com/635x540" title="MetLife" alt="Metlife Screenhot"/>
+    </div> 
+</div>
+
+<div class="project-row">
+    <div class="project-column">
+      <img class="project-img" src="https://via.placeholder.com/635x540" title="MetLife" alt="Metlife Screenhot"/>
+    </div>
+
+  <div class="project-column">
+    <h2 class="project-title">MetLife</h2>
+    <p>As part of my unviersity course we were put into groups of 6 to create a high 
+        fidelity working prototype of a digital project of our choice. We decided to create a guide aimed 
+        towards students coming to university for the first time. </p>
+    <ul>
+      <li>HTML / CSS / Javascript</li>
+      <li>Project management</li>
+      <li>Agile</li>
+    </ul>
+    <a class="project-btn" href="">Project site</a>
+  </div> 
+  </div> 
+
+
+
 
 </div>
+
+
+
+<style>
+.project-container{
+  max-width:65%;
+  margin: auto;
+  padding-bottom:3rem;
+}
+
+.project-row {
+  display: flex;
+}
+
+.project-column {
+  flex: 50%;
+  padding-bottom:10rem;
+}
+
+.project-column-text{
+  max-width:90%;
+}
+
+.project-img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.project-title{
+  font-size:35px;
+  font-weight: 500;
+  line-height:1.2;
+  margin-left:2rem;
+}
+
+.project-column p{
+  font-size:17px;
+  font-weight: 400;
+  line-height:1.2;
+  margin:1rem 1rem;
+}
+
+
+
+
+
+.project-column ul {
+  font-size:17px;
+  font-weight: 400;
+  display: block;
+  list-style-type: disc;
+  margin: 0 0 3rem 4rem;
+}
+.project-column ul, .project-column li {
+color:#222222;
+}
+
+
+.project-btn{
+  margin-left:2rem;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: white;
+  color: black;
+  border: 3px solid #023a5e; /* Green */
+  padding:1rem;
+  transition: 0.5s;
+}
+
+.project-btn:hover{
+  background-color: #023a5e;
+  color:white;
+}
+
+</style>
+
+
+
+
+
+
+
+
 
 <!-- BLOG  -->
 <div id="blog">
