@@ -1,7 +1,7 @@
-
 //Service Worker
 
-const pwaCache ='pwa-cache-11';
+//Cache Name
+const pwaCache ='pwa-cache-23';
 
 self.addEventListener('install', (e) => {
 
@@ -10,10 +10,11 @@ self.addEventListener('install', (e) => {
         console.log('New Cache Ready')
         return cache.addAll([
             '/',
-            'blackpoolsvg.svg',
+            'images/blackpoolsvg.svg',
             'main.js',
             'sw.js',
             'css/style.css',
+            'images/logo.png',
             'pages/blog-industry.html',
             'pages/blog-optimisation.html',
             'pages/blog-portfolio.html'
@@ -64,10 +65,4 @@ e.respondWith(newRes);
 });
 
 
-//Send notification on push
-// self.addEventListener('push', (e) => {
-
-//     let n = self.registration.showNotification('A notification from the SW.')
-//     e.waitUntil(n);
-// })
 
