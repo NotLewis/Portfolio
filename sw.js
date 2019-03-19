@@ -1,7 +1,7 @@
 //Service Worker
 
 //Cache Name
-const pwaCache ='pwa-cache-23';
+const pwaCache ='pwa-cache-30';
 
 self.addEventListener('install', (e) => {
 
@@ -11,13 +11,9 @@ self.addEventListener('install', (e) => {
         return cache.addAll([
             '/',
             'images/blackpoolsvg.svg',
-            'main.js',
-            'sw.js',
             'css/style.css',
-            'images/logo.png',
-            'pages/blog-industry.html',
-            'pages/blog-optimisation.html',
-            'pages/blog-portfolio.html'
+            'pages/blog-industry.html'
+ 
         ])
     })
 
