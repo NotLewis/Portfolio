@@ -16,42 +16,50 @@
 
 <body id="content" class="whitesmoke">
 <a href="#content" class="skip">Skip to content</a>
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </span>
-  
-      <a href="../index.html" class="logo"></a>
-  
-      <ul class="main-nav" id="js-menu">
-        <li><a href="../index.html" class="nav-links">Home</a></li>
-        <li><a href="../index.html#about" class="nav-links">About</a></li>
-        <li><a href="../index.html#portfolio" class="nav-links">Portfolio</a></li>
-        <li><a href="../index.html#blog" class="nav-links">Blogs</a></li>
-        <li><a href="cv.html" class="nav-links">CV</a></li>
-        <li><a href="../index.html#contactform" class="nav-links">Contact Me</a></li>
-        </ul>
-        <script src="../js/nav.js"></script>   
-      </nav>
+
+
+
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <a href="../index.html">
+      <img class="logo" src="../images/logo.png" alt="Lewis Hall's Logo">
+    </a>
+
+    <ul class="main-nav" id="js-menu">
+      <li><a href="../index.html" class="nav-links">Home</a></li>
+      <li><a href="../#about" class="nav-links">About</a></li>
+      <li><a href="../#latest-project" class="nav-links">Projects</a></li>
+      <li><a href="../#blog" class="nav-links" id="current">Blogs</a></li>
+      <li><a href="../css/" class="nav-links">Contact</a></li>
+      <li><a href="cv.html" class="nav-links">CV</a></li>
+    </ul>
+    <script src="../js/nav.js"></script>
+</nav>
+<script src="../main.js"></script>
+
+
+
 
 <div id="mainblog"> 
-  <h1 class="blog-title">Optimisation and Performance</h1>  
-       
-  <ul class="breadcrumb">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html#blog">Blogs</a></li>
-    <li>Optimisation and Performance</li>
-  </ul>
-  
-  <div class="blog-about">
-    <hr>
-    <p><i class="far fa-clock"> </i> Last Updated: 10th November 2018</p>
-    <p><i class="fas fa-user"> </i> Written by Lewis Hall</p>
-    <hr>
-  </div>
 
-  
-  <img class="blog-image" src="../images/performance.jpg" alt="Laptop displaying statistics for a website">
+    <ul class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#blog">Blogs</a></li>
+        <li>Optimisation and Performance</li>
+      </ul>
+
+
+  <h1 class="blog-title">Optimisation and Performance</h1>     
+  <div class="blog-about">
+      <p><i class="far fa-clock"> </i> Last Updated: 10th November 2018</p>
+      <p><i class="fas fa-user"> </i> Written by Lewis Hall</p>
+    </div>
+
+
+<img class="blog-header-image" src="../images/performance.jpg" alt="Laptop displaying statistics for a website">
 
 <div class="blog-content">
     <p><span class="firstcharacter">T</span>he moment has finally arrived, you have finished that website you have worked so hard on for what seems like years. 
@@ -60,20 +68,20 @@
     <p>But wait! You are not finished yet! You need to make sure it is all optimized!</p>
     <p>But Lewis, there are so tools and techniques, which should I use? Well, look no further, in this blog post I will show you the best tools you should use for performance and optimisation.</p>
       
-    <h3 class="blog-heading">Code</h3>
+    <h3>Code</h3>
     <p>Making sure your code is validated is essential when checking your websites optimisation. The easiest method of checking your HTML code is validated is by using the handy tool that can be found on the <a class="links" href="https://validator.w3.org/" title="W3C Markup Validation Serivce Website">W3C Markup Validation Serivce</a> website. You have the option to validate through your URL, uploading your HTML file or even validating by directly inputting your HTML code. If your code isn’t validated properly you will get a series of messages telling you what the problem is and how you can fix it.</p>   
     <p>And don’t worry, there is a <a class="links" href="https://jigsaw.w3.org/css-validator/" title="CSS Validation Website">CSS Validator</a> too that follows the same premise.</p>
 
-<img class="blog-content-image optim" src="../images/blog/HTML-checker.png" title="An example of the W3C HTML Validator in action">
+<img class="blog-content-image" src="../images/blog/HTML-checker.png" title="An example of the W3C HTML Validator in action">
 
-    <h3 class="blog-heading">Optimisation</h3>
+    <h3>Optimisation</h3>
     <p>Now that your code if fully validated and there are no problems it’s time for you to check your websites optimisation. “Website optimization is important because it helps your website visitors be more successful with their visits to your website.” (Qualaroo,Unknow:online)</p>
     <p>The tools I recommend for optimisation are <a class="links" href="https://developers.google.com/speed/pagespeed/insights/" title="PageSpeed Insight Website">PageSpeed Inisght</a> by Google and <a class="links" href="https://sitechecker.pro/" title="Site Checker Pro website">Site checker pro</a> to check how quickly your website loads. It provides you with suggestions on what you could change to make your website perform better.</p>
     <p>And if you haven’t already I highly recommend that you go back and check the optimization on your images. This can easily be done through online programmes such as <a class="links" href="https://tinypng.com/" title="TinyPNG website">Tiny PNG</a> where you simply upload your image file and it outputs a smaller file size. Do this with all your images to make sure that your website loads as fast as possible.</p>
 
 <img class="blog-content-image optim" src="../images/blog/tinyPNG.png" title="Screenshot of TinyPNG homepage.">
 
-    <h3 class="blog-heading">Search Engine Optimisation (SEO)</h3>
+    <h3>Search Engine Optimisation (SEO)</h3>
     <p>Not only does SEO “increase the quantity and quality of traffic to your website through organic search engine results” (Moz,Unknow:online)it also helps improve the user experience and usability of a website. A quick way to check your websites SEO is to use <a class="links" href="https://sitechecker.pro/" title="Site Checker Website"> Site Checker Pro</a></p>
 
     <p>To help improve your SEO you should check that you have included the following into your website.</p>
@@ -83,11 +91,10 @@
     <li>Title tags – This is a brief way search engines see what your site is about.</li>
     <li>Alt tags – This is the most common feature that most people forget when they upload images onto their website. Not only do descriptive alt tags help in search results, it is also very beneficial to those that may be using screen readers and want to know what the image is.</li>
     </ul>
-
 </div>
 
+<hr>
 <div class="blog-references">
-    <hr>
     <h3>References</h3>  
         <p>Moz. (Unknown) Moz – What is SEO?. [Online] [Accessed 2 / 11 /18] 
         <a class="links" href="https://moz.com/learn/seo/what-is-seo" title="Moz - What is SEO? website">https://moz.com/learn/seo/what-is-seo</a></p>
@@ -98,27 +105,38 @@
 </div>
 
 <!-- READ MORE BLOGS -->
-
-  <h1 class="section-title whitesmoke">Read more of my blogs</h1>   
-  <div class="blogmore-section">
+<div class="related-blogs">
+    <h1 class="section-title">Related blogs</h1>   
+    <div class="blog-flex">
+        <div class="blog-col">
+          <a href="blog-portfolio.html">
+            <img class="blog-column-image" src="../images/portfolio-unsplash.jpg" alt="Silver laptop on a white desk .">
+            <h2>Building my portfolio</h2>
+            <p>Follow me in my journey on creating my own web portfolio. From wireframes, 
+              to designing for mobile first, to the final product. See what I have done and why I've done it.</p>
+          </a>
+            
+        </div>
       
-    <div class="column column-one">
-      <a class="bloglink" href="blog-industry.html"> 
-      <img class="column-image" src="../images/the-digital-industry.jpg" alt="Silver laptop on a white desk with a variety of shapes on the screen.">
-      <h2>The digital industry</h2>
-      <p>A students perspective into the UK's digital industry after reading the 2018 Tech Nation report and Manchester Digital Skills Audit 2018. </p>
-      </a>
+        <div class="blog-col">
+          <a href="/blog-industry.html">
+            <img class="blog-column-image" src="../images/the-digital-industry.jpg" alt="Silver laptop on a white desk .">
+            <h2>The digital industry</h2>
+            <p>A students perspective into the UK's digital industry after reading the 2018 
+              Tech Nation report and Manchester Digital Skills Audit 2018.</p>
+          </a>
+        </div>
+      
+        <div class="blog-col">
+          <a href="blog-optimisation.html">
+            <img class="blog-column-image" src="../images/performance.jpg" alt="Laptop displaying statistics for a website">
+            <h2>Performance and optimisation</h2>
+            <p>The most important part of creating a website... making sure it is optimised and runs smoothly.
+               During my time as a student I have compilied a list of steps that will make this process so much easier.</p>
+          </a>
+        </div>
     </div>
-    
-    <div class="column column-two" >
-      <a class="bloglink" href="blog-portfolio.html">
-      <img class="column-image" src="../images/building-portfolio.png" alt="CSS code being displayed on desktop">
-      <h2>Building my portfolio</h2>
-      <p>Follow me in my journey on creating my own web portfolio. From wireframes, to designing for mobile first, to the final product. See what I have done and why I've done it.</p>
-    </a>
-    </div>
-
-  </div>
+</div>
 
 
 <!-- CONTACT -->  
