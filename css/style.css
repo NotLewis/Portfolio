@@ -47,7 +47,9 @@ a.skip:active, a.skip:focus, a.skip:hover {left: 0; top: 0;width: auto; height: 
 /* ############################################## */
 /*                     NAVIGATION                 */
 /* ############################################## */
-.navbar {padding-bottom:10px;background-color: #023a5e;}
+.navbar {
+  background-color: #023a5e;}
+  
 .logo { width: 50px;margin:10px 0 10px 20px;}
 .main-nav {list-style-type: none;}
 
@@ -83,6 +85,7 @@ a.skip:active, a.skip:focus, a.skip:hover {left: 0; top: 0;width: auto; height: 
 .main-nav {
   list-style-type: none;
   display: none;
+  padding-bottom:10px;
 }
 
 .active {
@@ -129,80 +132,6 @@ a.skip:active, a.skip:focus, a.skip:hover {left: 0; top: 0;width: auto; height: 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* buttons need to change*/
-button{
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
-.homebutton{
-  font-weight: 100;
-  font-family: 'Work Sans', sans-serif;
-  display: inline-block;  
-  text-align: center;
-  font-size: 14px;
-  padding: 10px;
-  width: 130px;
-  transition: all 0.5s;
-  cursor: pointer;            
-  margin-top: 10px;
-  }         
-.homebutton.CV {background-color: #023a5e; border: none;color: #FFFFFF;}
-          
-.homebutton.contact {  
-  background-color: white;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #023a5e; 
-  color: #000000; 
-}
-.homebutton span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;}
-          
-.homebutton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-          
-.homebutton:hover span {
-  padding-right: 25px;
-}
-          
-.homebutton:hover span:after {
-  opacity: 1;
-  right: 0;
-} 
-
-
-
-
-
-
-
-
-
-
-
   /*homepage */
 .landing{
   background-color:rgb(212, 240, 247)
@@ -218,7 +147,7 @@ button{
 }
 
 h1.homepage-fullname {
-  margin-top:35px;
+  margin-top:40px;
   padding:0px 0px 3px 10px;
   font-size:40px;
 }
@@ -284,6 +213,49 @@ p.location {
 }
 
 
+/* buttons on svg */
+.homebutton{
+  font-family: 'Work Sans', sans-serif;
+  display: inline-block;  
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;            
+  margin-top: 10px;
+  }         
+.homebutton.CV {background-color: #023a5e; border: none;color: #FFFFFF;}
+          
+.homebutton.contact {  
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #023a5e; 
+  color: #000000; 
+}
+.homebutton span {cursor: pointer;display: inline-block;position: relative;transition: 0.5s;}
+          
+.homebutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+          
+.homebutton:hover span {
+  padding-right: 25px;
+}
+          
+.homebutton:hover span:after {
+  opacity: 1;
+  right: 0;
+} 
+/* end of buttons */
+
+
 /* SVG */
 .blackpool-svg {
   margin: -0.5px;
@@ -298,6 +270,7 @@ p.location {
     margin-top:-150px;
     }
  }
+
 
 .seperator-one {
   background-color:rgba(2, 58, 94, 0.7);
@@ -340,7 +313,7 @@ h1{
   font-weight: 500;
 }
 
-#about, p{
+#about p{
   font-size:17px;
 }
 
