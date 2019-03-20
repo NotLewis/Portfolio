@@ -208,15 +208,6 @@ button{
   background-color:rgb(212, 240, 247)
 }
 
-h1.homename span {
-  padding: 0px 8px;
-}
-
-h1.homename span::before {
-  content: "\A";
-  white-space: pre;
-}  
-
 .homepage {
   font-size:1.2rem;
   margin: auto;
@@ -226,11 +217,21 @@ h1.homename span::before {
   max-width: 300px; 
 }
 
-h1.homename {
+h1.homepage-fullname {
   margin-top:35px;
   padding:0px 0px 3px 10px;
   font-size:40px;
 }
+
+h1.homepage-fullname span {
+  padding: 0px 8px;
+}
+
+h1.homepage-fullname span::before {
+  content: "\A";
+  white-space: pre;
+}  
+
 
 p.occupation { 
   font-size:15px;
@@ -247,7 +248,7 @@ p.location {
     font-size:1.4rem;
   }
 
-  h1.homename{
+  .homepage-fullname{
     padding-left:42px;
   }
 
@@ -267,7 +268,7 @@ p.location {
     margin-left:16rem;
   }
 
-  h1.homename{
+  .homepage-fullname{
     padding-left:0;
   }
 
