@@ -618,7 +618,7 @@ max-width:100%;
 
 
 
-
+/* BLOG LAYOUT */
 
 /* Breadcrumb */
 ul.breadcrumb {
@@ -648,10 +648,6 @@ color: #01447e;
 text-decoration: underline;
 }
 /* end of breadcrumb */
-
-
-
-
 
 
 #mainblog {
@@ -719,7 +715,7 @@ text-decoration: underline;
 }
 
 
-
+/* END OF BLOG LAYOUT */
 
 
 
