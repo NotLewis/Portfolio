@@ -601,6 +601,7 @@ max-width:100%;
 
 
 
+
 /* MAIN BLOG PAGE */
 .main-blog-page .blog-flex {
   width: 80%;
@@ -632,11 +633,6 @@ max-width:100%;
   width:100%;
   }
 }
-
-
-
-
-
 
 
 
@@ -768,11 +764,11 @@ text-decoration: underline;
 #contactform{
   margin-top:-10px;
   background-color: #c9e6ffc9;
-  
 }
+
 .contactcontainer{
   font-size:15px;
-  max-width:90%;
+  max-width:60%;
   margin-left:auto;
   margin-right:auto;
   padding:1em;
@@ -839,28 +835,23 @@ text-decoration: underline;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER*/
 footer {
   padding:10px 0px 6px;
   background-color: #023a5e;
+  color:white;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 100;
 }
 
+footer a{
+  color:white;
+}
 
-
+footer .highlight{
+  font-weight: normal;
+}
 
 
 
