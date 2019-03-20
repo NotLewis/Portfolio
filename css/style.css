@@ -602,32 +602,33 @@ max-width:100%;
 
 
 /* MAIN BLOG PAGE */
-.main-blog-test .blog-flex {
+.main-blog-page .blog-flex {
   width: 80%;
   flex-wrap: wrap;
+  padding-bottom:5rem;
   }
 
-.main-blog-test .blog-col {
+.main-blog-page .blog-col {
   width:calc(100% / 3 - 20px);
   margin: 20px auto 0;
   }
 
 @media (max-width: 1000px) {
-  .main-blog-test .blog-flex {
+  .main-blog-page .blog-flex {
   width: 90%;
   flex-wrap: wrap;
   }
-  .main-blog-test .blog-col {
+  .main-blog-page .blog-col {
   width:calc(50% - 20px);
   margin-bottom:20px;
   }
 } 
 
 @media (max-width: 650px) {
-  .main-blog-test .blog-flex {
+  .main-blog-page .blog-flex {
     display: block;
   }
-  .main-blog-test .blog-col {
+  .main-blog-page .blog-col {
   width:100%;
   }
 }
