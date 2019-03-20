@@ -16,41 +16,48 @@
 
 <body id="content" class="whitesmoke">
 <a href="#content" class="skip">Skip to content</a>
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </span>
-  
-    <a href="../index.html" class="logo"></a>
-  
+
+
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <a href="index.html">
+      <img class="logo" src="../images/logo.png" alt="Lewis Hall's Logo">
+    </a>
+
     <ul class="main-nav" id="js-menu">
       <li><a href="../index.html" class="nav-links">Home</a></li>
-      <li><a href="../index.html#about" class="nav-links">About</a></li>
-      <li><a href="../index.html#portfolio" class="nav-links">Portfolio</a></li>
-      <li><a href="../index.html#blog" class="nav-links">Blogs</a></li>
+      <li><a href="../#about" class="nav-links">About</a></li>
+      <li><a href="../#latest-project" class="nav-links">Projects</a></li>
+      <li><a href="../#blog" class="nav-links" id="current">Blogs</a></li>
+      <li><a href="../css/" class="nav-links">Contact</a></li>
       <li><a href="cv.html" class="nav-links">CV</a></li>
-      <li><a href="../index.html#contactform" class="nav-links">Contact Me</a></li>
-      </ul>
-      <script src="../js/nav.js"></script>   
-    </nav>
+    </ul>
+    <script src="../js/nav.js"></script>
+</nav>
+<script src="../main.js"></script>
+
+
+
 
 <div id="mainblog"> 
-  <h1 class="blog-title">The digital Industry</h1>  
-       
-  <ul class="breadcrumb">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html#blog">Blogs</a></li>
-    <li>The digital industry</li>
-  </ul>
-  
-  <div class="blog-about">
-    <hr>
+
+    <ul class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#blog">Blogs</a></li>
+        <li>The digital industry</li>
+      </ul>
+
+
+<h1 class="blog-title">The digital Industry</h1>  
+<div class="blog-about">
     <p><i class="far fa-clock"> </i> Last Updated: 10th November 2018</p>
     <p><i class="fas fa-user"> </i> Written by Lewis Hall</p>
-    <hr>
   </div>
 
-  <img class="blog-image" src="../images/the-digital-industry.jpg" alt="Laptop on a white desk with a variety of shapes on the screen.">
+  <img class="blog-header-image" src="../images/the-digital-industry.jpg" alt="Laptop on a white desk with a variety of shapes on the screen.">
   
   <div class="blog-content">
     <p><span class="firstcharacter">A</span>s a web development student that is graduating later this year, understanding the digital industry in and around the UK is very important. 
@@ -79,7 +86,7 @@
      may not be this year. And with Brexit just around the corner there could be a huge impact on the industry, and this is already evident with 45% of businesses saying 
      that Brexit has affected their company negatively (Manchester Digital, 2018).</p>
    
-   <h3 class="blog-heading">To conclude</h3>
+   <h3>To conclude</h3>
    <p>These reports have given me the understanding of the digital industry requirements, where the growth is and upcoming roles that will need to be filled and who better by than me.</p>
    
    <img class="blog-content-image" src="../images/blog/SkillsAudit-Development.png" title="Graph showing the statistics of the most sought after roles in the digital industry">
@@ -96,10 +103,11 @@
   <p>One meetup I have just recently started to attend is <a class="links" href="https://nuxuk.org/" title="Northern User Experience Website">NUX.</a> The only downside is that this is a paid event, which I was lucky enough to receive a free ticket from university. 
       but it gives you the opportunity to speak the other user experience professionals as well as fantastic talks throughout the day. And as a bonus you get lots of free goodies.</p>
    
-    </div>
-<hr>
-  <div class="blog-references">
+</div>
 
+
+<hr>
+<div class="blog-references">
  <h3>References</h3>  
  
   <p>Manchester Digital (2018) Digital Skills Festival – Manchester Digital Skills Audit Report 2018 [Online] 
@@ -117,27 +125,38 @@
 
 
 <!-- READ MORE BLOGS -->
-
-  <h1 class="section-title whitesmoke">Read more of my blogs</h1>   
-  <div class="blogmore-section">
+<div class="related-blogs">
+    <h1 class="section-title">Related blogs</h1>   
+    <div class="blog-flex">
+        <div class="blog-col">
+          <a href="blog-portfolio.html">
+            <img class="blog-column-image" src="../images/portfolio-unsplash.jpg" alt="Silver laptop on a white desk .">
+            <h2>Building my portfolio</h2>
+            <p>Follow me in my journey on creating my own web portfolio. From wireframes, 
+              to designing for mobile first, to the final product. See what I have done and why I've done it.</p>
+          </a>
+            
+        </div>
       
-    <div class="column column-one">
-      <a class="bloglink" href="blog-portfolio.html"> 
-      <img class="column-image" src="../images/building-portfolio.png" alt="CSS code being displayed on desktop">
-      <h2>Building my portfolio</h2>
-      <p>Follow me in my journey on creating my own web portfolio. From wireframes, to designing for mobile first, to the final product. See what I have done and why I've done it.</p>
-      </a>
+        <div class="blog-col">
+          <a href="/blog-industry.html">
+            <img class="blog-column-image" src="../images/the-digital-industry.jpg" alt="Silver laptop on a white desk .">
+            <h2>The digital industry</h2>
+            <p>A students perspective into the UK's digital industry after reading the 2018 
+              Tech Nation report and Manchester Digital Skills Audit 2018.</p>
+          </a>
+        </div>
+      
+        <div class="blog-col">
+          <a href="blog-optimisation.html">
+            <img class="blog-column-image" src="../images/performance.jpg" alt="Laptop displaying statistics for a website">
+            <h2>Performance and optimisation</h2>
+            <p>The most important part of creating a website... making sure it is optimised and runs smoothly.
+               During my time as a student I have compilied a list of steps that will make this process so much easier.</p>
+          </a>
+        </div>
+      </div>
     </div>
-    
-    <div class="column column-two" >
-      <a class="bloglink" href="blog-optimisation.html">
-      <img class="column-image" src="../images/performance.jpg" alt="Laptop displaying statistics for a website">
-      <h2>Performance and optimisation</h2>
-      <p>The most important part of creating a website... making sure it is optimised and runs smoothly. During my time as a student I have compilied a list of steps that will make this process so much easier.</p>
-    </a>
-    </div>
-
-  </div>
 
 
 <!-- CONTACT -->  
