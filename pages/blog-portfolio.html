@@ -16,49 +16,66 @@
 
 <body id="content" class="whitesmoke">
 <a href="#content" class="skip" title="Skip to content">Skip to content</a>
-    <nav class="navbar">
-      <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-      </span>
-  
-      <a href="../index.html" class="logo"></a>
-  
-      <ul class="main-nav" id="js-menu">
-        <li><a href="../index.html" class="nav-links">Home</a></li>
-        <li><a href="../index.html#about" class="nav-links">About</a></li>
-        <li><a href="../index.html#portfolio" class="nav-links">Portfolio</a></li>
-        <li><a href="../index.html#blog" class="nav-links">Blogs</a></li>
-        <li><a href="cv.html" class="nav-links">CV</a></li>
-        <li><a href="../index.html#contactform" class="nav-links">Contact Me</a></li>
-        </ul>
-        <script src="../js/nav.js"></script>   
-      </nav>
+
+
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <a href="index.html">
+      <img class="logo" src="../images/logo.png" alt="Lewis Hall's Logo">
+    </a>
+
+    <ul class="main-nav" id="js-menu">
+      <li><a href="../index.html" class="nav-links">Home</a></li>
+      <li><a href="../#about" class="nav-links">About</a></li>
+      <li><a href="../#latest-project" class="nav-links">Projects</a></li>
+      <li><a href="../#blog" class="nav-links" id="current">Blogs</a></li>
+      <li><a href="../css/" class="nav-links">Contact</a></li>
+      <li><a href="cv.html" class="nav-links">CV</a></li>
+    </ul>
+    <script src="../js/nav.js"></script>
+</nav>
+<script src="../main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="mainblog"> 
-  <h1 class="blog-title">Building my portfolio</h1>  
-       
-  <ul class="breadcrumb">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../index.html#blog">Blogs</a></li>
-    <li>Building my portfolio</li>
-  </ul>
-  
-  <div class="blog-about">
-    <hr>
-    <p><i class="far fa-clock"> </i> Last Updated: 10th November 2018</p>
-    <p><i class="fas fa-user"> </i> Written by Lewis Hall</p>
-    <hr>
-  </div>
 
-  <img class="blog-image" src="../images/building-portfolio.png" alt="CSS code being displayed on desktop.">
+    <ul class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#blog">Blogs</a></li>
+        <li>Building my portfolio</li>
+      </ul>
+
+  <h1 class="blog-title">Building my portfolio</h1>  
+  <div class="blog-about">
+      <p><i class="far fa-clock"> </i> Last Updated: 10th November 2018</p>
+      <p><i class="fas fa-user"> </i> Written by Lewis Hall</p>
+    </div>
+
+  <!-- header image -->
+  <img class="blog-header-image" src="../images/building-portfolio.png" alt="CSS code being displayed on desktop.">
   
+  <!-- blog content -->
   <div class="blog-content">
     <p><span class="firstcharacter">O</span>ver the last few weeks I have been in the process of increasing my web presence by creating my 
       own portfolio that best showcases my talents and the previous work I have developed over my time at university. In this blog post I 
       will show you my process of building my portfolio from scratch, no frameworks!</p>
     
 
-      <h3 class="blog-heading">The beginning</h3>
+      <h3>The beginning</h3>
       <p>As every project should start I had to begin with some basic research to answer question such as; what usually goes into a portfolio; 
         what sort of navigation to most portfolio’s use; what do all portfolios have in common. From this brief research I found that I need 
         to include my past work, a clear contact form and social media links.</p>
@@ -75,24 +92,24 @@
       
       <p>I created my wireframes in adobe illustrator as seen in the image below.</p>
       
-      <img class="blog-content-image optim" src="../images/blog/wireframes.jpg" title="A series of 3 mobile wireframes of what each secition of the portfolio looks like.">
+      <img class="blog-content-image" src="../images/blog/wireframes.jpg" title="A series of 3 mobile wireframes of what each secition of the portfolio looks like.">
       
-      <h3 class="blog-heading">Coding</h3>
+      <h3>Coding</h3>
       <p>Then came the hard part, the coding. I recommend EVERYONE to start coding by using the mobile first approach. It’s as simple as it sounds, 
         designing for the smallest screen and working your way up. If you don’t acknowledge the importance of responsive web design just think 
         of it this way, 52.4% of people that access the internet are from mobile devices. Just let that sink in for a second. (Statista, 2018:Online)</p>
       
-      <p>I made sure that I conformed will all the latest <a class="links" href="https://www.w3.org/standards/" title="W3C web standards web page">W3C web standards</a> to make sure that 
+      <p>I made sure that I conformed will all the latest <a class="highlight" href="https://www.w3.org/standards/" title="W3C web standards web page">W3C web standards</a> to make sure that 
         my website can be accessible to everyone.</p>
       
-      <h3 class="blog-heading">Techniques</h3>
+      <h3>Techniques</h3>
       <p>Throughout my portfolio I used a variety of techniques such as flexbox and CSS grid to create my layouts. I decided to use CSS grid for all the elements 
         that I wanted to be side by side, for example in the portfolio gallery. CSS grid allows you to split the page into a series of columns and rows giving you 
         the freedom to put anything anywhere on the page which was very difficult with just flex box.</p>
       
 
       
-      <h3 class="blog-heading">SVG</h3>
+      <h3>SVG</h3>
       <p>To make my portfolio stand out from the rest I decided to add an animated SVG (Scaleable Vector Graphic) on my homepage. I recommend if you are 
         thinking of making a portfolio, try to think outside the box and to not just copy what everyone else does. Make your site stand out from the rest! 
         You want to get a job, right?</p>
@@ -103,52 +120,63 @@
       
       <p>This was an element I am most proud of as this was the first time I have tried experimenting with SVG. And yes, it did take me ages to finish…</p>
       
-      <p>I decided to create a skyline of Blackpool, with the focusing being on the Blackpool tower.</p>
-      
-      <p>Not only is this unique to other portfolio’s it gives the visitor a little insight about myself without having to read anything.</p>
-      
-      <p>And if that’s not impressive enough, I made sure to add some subtle animations to the SVG for even more creativity. Notice how the Tower lights up every now and then? </p>
-    
-
+      <p>I decided to create a skyline of Blackpool, with the focusing being on the Blackpool tower. Not only is this unique to other portfolio’s it gives 
+        the visitor a little insight about myself without having to read anything. And if that’s not impressive enough, I made sure to add some 
+        subtle animations to the SVG for even more creativity. Notice how the Tower lights up every now and then? </p>
     </div>
-<hr>
+
+
+
+
+  <hr>
   <div class="blog-references">
- <h3>References</h3>  
- <p>Skillcrush, Chapman. Cameron (2018) How to Craft a Stand-Out Web Developer Portfolio
-    [Online] [Accessed 5/11/2018] 
-    <a class="links" href="https://skillcrush.com/2016/10/31/web-developer-portfolio/" title="Skillcrush website">https://skillcrush.com/2016/10/31/web-developer-portfolio/</a></p>
-   
-   <p>Statista (2018) Percentage of mobile device website traffic worldwide from 1st quarter 2015 to 3rd quarter 2018 [Online] [Accessed 5/11/2018] 
-     <a class="links" href="https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/" title="Statista website"> 
-      https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/ </a></p>
-   
-  </div>  
-  </div>
+  <h3>References</h3>  
+  <p>Skillcrush, Chapman. Cameron (2018) How to Craft a Stand-Out Web Developer Portfolio
+      [Online] [Accessed 5/11/2018] 
+      <a class="links" href="https://skillcrush.com/2016/10/31/web-developer-portfolio/" title="Skillcrush website">https://skillcrush.com/2016/10/31/web-developer-portfolio/</a></p>
+    
+    <p>Statista (2018) Percentage of mobile device website traffic worldwide from 1st quarter 2015 to 3rd quarter 2018 [Online] [Accessed 5/11/2018] 
+      <a class="links" href="https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/" title="Statista website"> 
+        https://www.statista.com/statistics/277125/share-of-website-traffic-coming-from-mobile-devices/ </a></p>
+    
+    </div>  
+    </div>
 
 
 
 
 <!-- READ MORE BLOGS -->
-
-  <h1 class="section-title whitesmoke">Read more of my blogs</h1>   
-  <div class="blogmore-section">
-      
-    <div class="column column-one">
-      <a class="bloglink" href="blog-industry.html"> 
-      <img class="column-image" src="../images/the-digital-industry.jpg" alt="Silver laptop on a white desk with a variety of shapes on the screen.">
-      <h2>The digital industry</h2>
-      <p>A students perspective into the UK's digital industry after reading the 2018 Tech Nation report and Manchester Digital Skills Audit 2018.</p>
-      </a>
-    </div>
+<div class="related-blogs">
+  <h1 class="section-title">Related blogs</h1>   
+  <div class="blog-flex">
+      <div class="blog-col">
+        <a href="blog-portfolio.html">
+          <img class="blog-column-image" src="../images/portfolio-unsplash.jpg" alt="Silver laptop on a white desk .">
+          <h2>Building my portfolio</h2>
+          <p>Follow me in my journey on creating my own web portfolio. From wireframes, 
+            to designing for mobile first, to the final product. See what I have done and why I've done it.</p>
+        </a>
+          
+      </div>
     
-    <div class="column column-two" >
-      <a class="bloglink" href="blog-optimisation.html">
-      <img class="column-image" src="../images/performance.jpg" alt="Laptop displaying statistics for a website">
-      <h2>Performance and optimisation</h2>
-      <p>The most important part of creating a website... making sure it is optimised and runs smoothly. During my time as a student I have compilied a list of steps that will make this process so much easier.</p>
-    </a>
+      <div class="blog-col">
+        <a href="/blog-industry.html">
+          <img class="blog-column-image" src="../images/the-digital-industry.jpg" alt="Silver laptop on a white desk .">
+          <h2>The digital industry</h2>
+          <p>A students perspective into the UK's digital industry after reading the 2018 
+            Tech Nation report and Manchester Digital Skills Audit 2018.</p>
+        </a>
+      </div>
+    
+      <div class="blog-col">
+        <a href="blog-optimisation.html">
+          <img class="blog-column-image" src="../images/performance.jpg" alt="Laptop displaying statistics for a website">
+          <h2>Performance and optimisation</h2>
+          <p>The most important part of creating a website... making sure it is optimised and runs smoothly.
+             During my time as a student I have compilied a list of steps that will make this process so much easier.</p>
+        </a>
+      </div>
     </div>
-
   </div>
 
 
