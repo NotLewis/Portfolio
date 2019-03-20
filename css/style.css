@@ -22,10 +22,6 @@ a.links:visited{border-bottom: 2px coral; }
 
 
 
-/* THIS FOR CONTACT BIT */
-textarea {
-	font-family: 'Work Sans', sans-serif;
-}
 
 
 /* skip links */
@@ -34,7 +30,7 @@ a.skip:active, a.skip:focus, a.skip:hover {left: 0; top: 0;width: auto; height: 
 /* end of skip links  */
 
 
-/* maybe delete */
+
 .white{background-color:#fff;}
 .whitesmoke{background-color:whitesmoke;}
 
@@ -568,6 +564,7 @@ max-width:100%;
   color:#242424;
   font-size:25px;
   margin: 10px 10px;
+  font-weight:500;
 }
 
 .blog-col p{
@@ -762,14 +759,19 @@ text-decoration: underline;
   box-sizing: border-box;
 }
 
+textarea {
+	font-family: 'Work Sans', sans-serif;
+}
+
 #contactform{
-  margin-top:-10px;
+  padding:5rem 0;
   background-color: #c9e6ffc9;
+  /* background-color: #f7f4f4; */
 }
 
 .contactcontainer{
   font-size:15px;
-  max-width:60%;
+  width:80%;
   margin-left:auto;
   margin-right:auto;
   padding:1em;
@@ -814,7 +816,7 @@ text-decoration: underline;
 .contact form button, .contact form input, .contact form textarea{
   width:100%;
   padding:1em;
-  border:1px solid #c9e6ff;
+  border:1px solid #2f5496;
 }
 
 @media(max-width:700px){
