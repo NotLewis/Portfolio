@@ -359,19 +359,17 @@ max-width:100%;
 .project-title{
   font-size:32px;
   font-weight: 500;
-  width:100%;
+  width:95%;
   margin:0 auto;
   color: #222222;
-  padding-left:1.3rem;
 }
 
 .project-row p{
   font-size:16px;
   line-height:1.2;
-  width:100%;
+  width:95%;
   margin:0 auto;
   color: #222222;
-  padding-left:1.3rem;
 }
 
 .project-row ul {
@@ -379,9 +377,9 @@ max-width:100%;
   display: block;
   list-style-type: disc;
   padding-bottom:2rem;
-  width:100%;
+  width:95%;
   margin:0 auto;
-  padding-top:20px;
+  padding:20px 0;
   /* padding-left:3rem; */
 }
 
@@ -830,8 +828,7 @@ textarea {
 }
 
   @media (max-width: 850px) { 
-
-    .contact-section{
+    .homepage-contact-section{
     width: 90%; 
     }
   }
@@ -875,7 +872,7 @@ textarea {
 
 /* FOOTER*/
 footer {
-  padding:10px 0px 6px;
+  padding:10px 0px;
   background-color: #023a5e;
   color:white;
   text-align: center;
