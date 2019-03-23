@@ -43,11 +43,12 @@ a.skip:active, a.skip:focus, a.skip:hover {left: 0; top: 0;width: auto; height: 
 /* ############################################## */
 /*                     NAVIGATION                 */
 /* ############################################## */
-.navbar {
-  background-color: #023a5e;}
+.navbar {background-color: #023a5e;}
   
 .logo { width: 50px;margin:10px 0 10px 20px;}
-.main-nav {list-style-type: none;}
+.main-nav {
+  list-style-type: none;
+}
 
 .nav-links {
   text-decoration: none;
