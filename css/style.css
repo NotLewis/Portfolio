@@ -285,10 +285,8 @@ p.location {
   text-align: center;
 }
 
-  
-/* ############################################## */
-/*                   ABOUT SECTION                */
-/* ############################################## */
+
+/* about section // socials */
 #about{
   background-color:whitesmoke;
 }
@@ -313,6 +311,7 @@ h1{
   font-size:17px;
 }
 
+/* socials */
 .social-wrap{
   text-align: center;
   padding-bottom:25px;
@@ -322,8 +321,13 @@ h1{
   display:inline-block;
   vertical-align: middle;
 }
+
 .facebook{
   width:34px;
+}
+
+.github{
+  font-size:40px;
 }
 
 .social:hover{ 
