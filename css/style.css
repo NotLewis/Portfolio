@@ -715,7 +715,7 @@ text-decoration: underline;
   padding:15px 0;
 }
 
-.blog-content li{
+.blog-content ol li{
 padding-bottom:5rem;
 }
 
@@ -727,6 +727,12 @@ padding-bottom:5rem;
   padding-bottom:5rem;
 }
 
+
+
+code{
+      padding: .1em;
+    border-radius: .3em;
+}
 
 /* END OF BLOG LAYOUT */
 
