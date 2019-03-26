@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet"> 
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Blog post about the digital industry in and around the UK.">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript, MMU, Graduate, Web Developer, Lewis Hall, Manchester, Blackpool">
+  <meta name="author" content="Lewis Hall">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.png"/>
+  <title>Replicated complex layouts using CSS Grid - Blog</title>
+</head>
+
+<body id="content" class="whitesmoke">
+<a href="#content" class="skip">Skip to content</a>
+
+
+<nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+
+    <a href="../index.html">
+      <img class="logo" src="../images/logo.png" alt="Lewis Hall's Logo">
+    </a>
+
+    <ul class="main-nav" id="js-menu">
+        <li><a href="../index.html" class="nav-links">Home</a></li>
+        <li><a href="../index.html#about" class="nav-links">About</a></li>
+        <li><a href="../index.html#latest-project" class="nav-links">Projects</a></li>
+        <li><a href="blogs.html" class="nav-links" id="current">Blogs</a></li>
+        <li><a href="cv.html" class="nav-links">CV</a></li>
+      </ul>
+    <script src="../js/nav.js"></script>
+</nav>
+<script src="../main.js"></script>
+
+
+
+
+<div id="mainblog"> 
+
+    <ul class="breadcrumb">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li>Replicated complex layouts using CSS Grid</li>
+    </ul>
+
+<h1 class="blog-title">Replicated complex layouts using CSS Grid</h1>  
+<div class="blog-about">
+    <p><i class="far fa-clock"> </i> Last Updated: 23nd March 2019</p>
+    <p><i class="fas fa-user"> </i> Written by Lewis Hall</p>
+  </div>
+
+
+  <img class="blog-header-image" src="../images/blog/grid-header.jpg" alt="Code displayed on a monitor">
+  
+<div class="blog-content">
+    <h3>Aim and objectives</h3>
+    <p>To research, design and build complex layouts using CSS grid.</p>
+    <ul>
+        <li>To find out what CSS grid is and how it compares to other frameworks.</li>
+        <li>To undergo research on how to use CSS grid for complex layouts.</li>
+        <li>To develop and code a responsive and accessible layout using CSS grid that conforms to current and best practices.</li>
+    </ul>
+    
+    <a class="highlight" href="https://16021537.webdevmmu.uk/projects/grid/index.html">Take a look at the demo</a>
+    <p><a href="https://github.com/NotLewis/CSS-Grid">Grid project on github</a></p>
+    <!-- Image from SMASHINGMAGAZINE -->
+    <p><a href="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/2ce648b1-ae58-43c4-b7d8-f2d8b14af968/texture-and-tone-control-1000.jpg">The image I was replicating</a></p>
+
+
+    <h3>What is CSS grid?</h3>
+    <p>Before I go into detail about my project, it’s best to have a better understanding of what CSS grid is. 
+        “CSS grid is a layout method designed for the two-dimensional layout of items on a web page or application.”
+        (GridByExample, unknown). This basically means that it makes it easier to design web pages without having to use 
+        floats and positioning.</p>
+
+    
+
+    <h3>Current browser support</h3>
+    <p>CSS Grid is currently supported by the majority of updated browsers such as Chrome and 
+        Firefox. However internet explorer still doesn't fully support grid yet. 
+        See <a class="highlight" href="https://caniuse.com/">Can I Use</a> to see if the browser you are 
+        using supports the grid layout.</p>
+
+
+    <img class="blog-content-image" src="../images/blog/grid-browsers.png" alt="Grid support on different browsers">
+
+
+    <h3>My current skill</h3>
+    <p>Before starting this project I had never used CSS grid before as I was set in my ways of using other technologies, 
+        such as flexbox, for my layouts. I convinced myself that there was no need of learning another technique for laying 
+        out websites. But once I found out what you could do with CSS grid, I knew I had to try it.</p>
+
+
+    <h3>The project</h3>
+    <p>Before starting the second project I had to find a suitable complex layout that would be hard to replicate on the 
+        web. I searched several magazine archives online, but I struggled finding a design that didn't heavily rely on 
+        using images and a column layout. </p>
+    
+    <p>After searching for a while I finally found an <a href="https://www.smashingmagazine.com/2013/02/creating-visual-hierarchies-typography/" class="highlight">article on smashing magazine</a> 
+        which talked about unusual visual hierarchies.</p>
+    
+    <p>In this article I found the perfect layout that I wanted to replicate. The design was of an advertisement for a 
+        Frankenstein theatre performance. It includes a variety of text and sizes all laid out in a non-linear fashion.</p>
+
+    <p><em>Note: For this project I used the firefox developer edition which gave me a visual representation of the 
+        grid on the page.</em></p>
+
+
+
+
+<h3>The approach</h3>
+<p>As with every project, I started with a mobile first approach in mind, designed for the smallest screen 
+    and working my way up. It is the ideology that mobile design, as the hardest, should be done first. 
+    This is because the smallest designs will only have essential features. The key to mobile first is 
+    to make sure there is a good hierarchy of information meaning that all the important information 
+    can be found at the top of the page, such as the play name and dates.</p>
+
+<p>First I created the mobile wireframes created in Adobe XD. This design includes a 2 column grid with
+     each block of text is separated with a quote from the play.</p>
+<!-- IMAGE HERE -->
+
+
+
+
+<p>Then I created a wireframe for the desktop version of the site using the image I was replicating. 
+    This was useful as it allowed me to see at a glance how many rows and columns I will need (6 columns and 4 rows).</p>
+<!-- IMAGE HERE -->
+
+
+
+
+
+
+
+<h3>The coding</h3>
+
+<!-- codepen -->
+<p class="codepen" data-height="333" data-theme-id="dark" data-default-tab="html,result" data-user="NotLewis" data-slug-hash="BbEoMw" style="height: 333px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="Project 1 - part 1">
+        <span>See the Pen <a href="https://codepen.io/NotLewis/pen/BbEoMw/">
+        Project 1 - part 1</a> by Lewis Hall (<a href="https://codepen.io/NotLewis">@NotLewis</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<p>To see the grid in action let's take a look at my project. I started of by converting all of the text from 
+    the original image into HTML. With a little bit of styling in CSS, the page is starting to look similar to 
+    what I designed in Adobe XD.</p>
+
+
+    <!-- codepen -->
+<p class="codepen" data-height="263" data-theme-id="dark" data-default-tab="css" data-user="NotLewis" data-slug-hash="pYBgZM" style="height: 263px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="part2">
+        <span>See the Pen <a href="https://codepen.io/NotLewis/pen/pYBgZM/">
+        part2</a> by Lewis Hall (<a href="https://codepen.io/NotLewis">@NotLewis</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<p>Next I enclosed all of the divs containing content within another div named <code>grid-container</code>. This enabled 
+    me to start adding a grid to the webpage. I started of with creating the 2 column grid by using the 
+</code>display: grid</code> is required to start using the grid layout and the fr unit makes sure that the 
+values will be divided equally.</p>
+
+
+
+
+<h3>Mobile view</h3>
+<!-- codepen -->
+<p class="codepen" data-height="356" data-theme-id="dark" data-default-tab="css" data-user="NotLewis" data-slug-hash="GeLoRE" style="height: 356px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="part3">
+        <span>See the Pen <a href="https://codepen.io/NotLewis/pen/GeLoRE/">
+        part3</a> by Lewis Hall (<a href="https://codepen.io/NotLewis">@NotLewis</a>)
+        on <a href="https://codepen.io">CodePen</a>.</span>
+      </p>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+<p>Once I had two columns I could then start moving elements around the page. This is done by specifying which 
+    column and row a div will fall into. For example, the main quote, which is on row 3, starts on column one 
+    and spans over to the third column.</p>
+
+<img class="blog-content-image-small" src="../images/blog/grid-2column.png" alt="example of 2 column grid layout">
+<p>The layout should now look to what I had originally designed in my wireframe.</p>
+
+
+
+
+
+<h3>Tablet view</h3>
+<img class="blog-content-image-small" src="../images/blog/grid-3column.png" alt="example of 3 column grid layout">
+
+<p>Once the browser reaches 740 px in width. The grid then changes from a 2 column to a 3 column grid using media 
+    queries. This enables me to play around with the layout a lot more. At this point my design is starting to look 
+    more similar to the original one, with the title at the top of the page and the main quote in the middle being 
+    surrounded by text. As the page width increases, so does the size of the text.</p>
+
+<p>This was achieved in a similar way as the two column grid, but this time <code>grid-template-columns</code> is set to <code>repeat(3,1fr)</code>. 
+    This line of code is a simple and more semantical way of setting three columns with an equal width. </p>
+
+
+
+
+
+  <h3>Desktop view</h3>
+  <!-- codepen -->
+  <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css" data-user="NotLewis" data-slug-hash="vPMLzp" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1em 0; padding: 1em;" data-pen-title="part4">
+          <span>See the Pen <a href="https://codepen.io/NotLewis/pen/vPMLzp/">
+          part4</a> by Lewis Hall (<a href="https://codepen.io/NotLewis">@NotLewis</a>)
+          on <a href="https://codepen.io">CodePen</a>.</span>
+        </p>
+        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+  <p>Finally once the viewport reaches 1340px the screen size is big enough to where I can replicate the original design. This was done by 
+      setting up a six column grid, with the fourth column being twice the size as the others. 
+      <code>grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;</code></p>
+
+  <p>Then using the same technique of moving the each element around using <code>grid-column</code> and 
+  <code>grid-row</code> I was able to replicated the original design.</p>
+
+
+    <h3>Conclusion</h3>
+
+    <p>Learning CSS grid taught me a lot about layouts on the web. One problem I encountered was that in the original design, 
+        the quote inside the grey container was up a little bit outside of the grid. To overcome this I simply added 
+        <code>position: relative</code> and <code>top: -5rem</code> to move the element up. 
+        Position relative was something that I had hardly used in the past and its another layout technique I understand more than before.</p>   
+
+
+</div>
+
+<hr>
+  <div class="blog-references">
+  <h3>References</h3>  
+    <p>GridByExample. (unknown) CSS Grid layout. [Online] [Accessed 24/01/2019]  
+      <a href="https://gridbyexample.com/">https://gridbyexample.com/</a></p>
+
+      <p>W3Schools. (unknown) CSS Grid layout module. [Online] [Accessed 24/01/2019] 
+        <a href="https://www.w3schools.com/CSS/css_grid.asp">https://www.w3schools.com/CSS/css_grid.asp</a></p>
+  </div>
+<!-- end of References -->
+
+</div>
+
+
+
+<!-- READ MORE BLOGS -->
+<div class="related-blogs">
+    <h1 class="section-title">Related blogs</h1>   
+    <div class="blog-flex">
+
+        <div class="blog-col">
+          <a href="blog-improvements.html">
+            <img class="blog-column-image" src="../images/blog/improvements.jpg" alt="Silver iMac with keyboard">
+            <h2>Portfolio changes</h2>
+            <p>I've made lots of changes to my portfolio since my last blog post. Check out what I've done and why.</p>
+          </a>
+        </div>
+
+        <div class="blog-col">
+            <a href="blog-pwa.html">
+              <img class="blog-column-image" src="../images/blog/pwa-icon.jpg" alt="Progressive web app icon">
+              <h2>Progessive Web Apps</h2>
+              <p>A self initiated project where I implement progressive web app features into my portfolio. Find out what PWA's are and how you can use them!</p>
+            </a>
+          </div>
+      
+          <div class="blog-col">
+              <a href="blog-optimisation.html">
+                <img class="blog-column-image" src="../images/blog/performance.jpg" alt="Laptop displaying statistics for a website">
+                <h2>Performance and optimisation</h2>
+                <p>The most important part of creating a website... making sure it is optimised and runs smoothly.
+                    During my time as a student I have compilied a list of steps that will make this process so much easier.</p>
+              </a>
+          </div>
+
+    </div>
+</div>
+
+
+
+
+<footer>
+    <p> 
+      <a href="http://www.mmu.ac.uk/" title="MMU homepage">&copy; MMU 2018</a>
+      <span>&middot; Lewis Hall</span>
+      <span>&middot; This is student coursework</span>
+      <span>&middot; Tutor: <a  href="mailto:r.eskins@mmu.ac.uk">Richard Eskins</a></span>
+      <span>&middot;<a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a></span>
+      <a class="highlight" href="#content">&middot; Back to the top &uarr;</a>
+    </p>
+  </footer> 
+    
+</body>
+</html>

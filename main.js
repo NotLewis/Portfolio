@@ -1,8 +1,7 @@
 
 // Progressive Enhancement (SW supported)
-// if ('serviceWorker' in navigator) {
-    if (navigator.serviceWorker) {
 
+    if (navigator.serviceWorker) {
         // Register the SW
         navigator.serviceWorker.register('/sw.js').then((registration) => {
       
@@ -12,8 +11,6 @@
 
 //Notification Support
 if(window.Notification) {
-
-
 function showNotification() {
 
     let notificationOpts = {

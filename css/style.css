@@ -295,10 +295,10 @@ p.location {
 #about p,
 h1{
   color: black; 
-    margin: 0 auto;
-    max-width: 800px;
-    padding:0px 20px;
-    padding-bottom:20px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding:0px 20px;
+  padding-bottom:20px;
 }
 
 .introduction{
@@ -343,7 +343,7 @@ h1{
 
 /*LATEST PROJECTS */
 .project-btn-container{text-align: center;}
-.project-btn{font-size: 20px;font-weight: 400;background-color: white;text-decoration: underline;color: black;border: 3px solid #023a5e; padding:1rem;transition: 0.5s;display: inline-block;cursor: pointer;}
+.project-btn{font-size: 20px;font-weight: 400;background-color: white;color: black;border: 3px solid #023a5e; padding:1rem;transition: 0.5s;display: inline-block;cursor: pointer;}
 .project-btn:hover{background-color: #023a5e;color:white}
 
 .project-row {
@@ -404,8 +404,6 @@ max-width:100%;
   }
 }
 
-
-
 /* MEDIUM SIZE CENTERED*/
 @media (min-width: 990px) { 
   .project-img-left{
@@ -438,7 +436,6 @@ max-width:100%;
     margin:0;
     padding:0;
   }
-  
 }
 
   @media (min-width: 1200px) { 
@@ -578,8 +575,6 @@ max-width:100%;
 
 
 
-
-
 /* BLOG LAYOUT */
 /* Breadcrumb */
 ul.breadcrumb {
@@ -651,9 +646,13 @@ text-decoration: underline;
 }
 
 .blog-content {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 25px;
   padding-top: 15px;
+}
+
+.blog-content li{
+  padding-top:8px;
 }
 
 .blog-content h3{
@@ -664,7 +663,14 @@ text-decoration: underline;
 
 .blog-content-image{
   width:100%;
-  padding:20px;
+  padding-top:15px;
+}
+
+.blog-content-image-small{
+  display:block;
+  width:60%;
+  margin: 0 auto;
+  padding-top:15px;
 }
 
 .blog-references p{
@@ -683,108 +689,12 @@ text-decoration: underline;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CONTACT */
-/* *{
-  box-sizing: border-box;
-}
-
-textarea {
-	font-family: 'Work Sans', sans-serif;
-}
-
-#contactform{
-  padding:5rem 0;
-  background-color: #c9e6ffc9;
-}
-
-.contactcontainer{
-  font-size:15px;
-  width:80%;
-  margin-left:auto;
-  margin-right:auto;
-  padding:1em;
-}
-
-.wrapper{
-  -webkit-box-shadow: 0px 2px 3px 2px rgba(181, 181, 181, 1);
-  -moz-box-shadow: 0px 2px 3px 2px rgba(181, 181, 181, 1);
-  box-shadow: 0px 2px 3px 2px rgba(181, 181, 181, 1);
-}
-
-.wrapper > *{
-  padding: 1em;
-}
-
-.contact{
-  background:#f9feff;
-}
-
-.contact form{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap:20px;
-}
-
-.contact form label{
-  display:block;
-}
-
-.contact form .contactname{
-  grid-column: 1 / 5;
-}
-
-.contact form .contactemail{
-  grid-column: 5 / 9;
-}
-
-.contact .full{
-  grid-column: 1 / 9;
-}
-
-.contact form button, .contact form input, .contact form textarea{
-  width:100%;
-  padding:1em;
-  border:1px solid #2f5496;
-}
-
-@media(max-width:700px){
-  .contact form .contactname{
-    grid-column: 1 / 9;
-    margin:0px;
-  }
-  
-  .contact form .contactemail{
-    grid-column: 1 / 9;
-    margin:0px;
-  }
-  .contact .full{
-    margin:0px;
-  }
-} */
-
-
-
-/* homepage contact form  */
-#homepage-contact-container{
+/* contact form  */
+#contact-container{
   background-color:#eeeeee;
 }
 
-.homepage-contact-section{
+.contact-section{
     width: 800px; 
     margin: 0 auto;
     border-radius: 5px;
@@ -792,20 +702,20 @@ textarea {
     padding-bottom:5rem;
   }
 
-.homepage-contact-section textarea {
+.contact-section textarea {
 	font-family: 'Work Sans', sans-serif;
 }
 
   @media (max-width: 850px) { 
-    .homepage-contact-section{
+    .contact-section{
     width: 90%; 
     }
   }
 
-  .homepage-contact-section input[type=text],
-  .homepage-contact-section input[type=email], 
-  .homepage-contact-section select, 
-  .homepage-contact-section textarea {
+  .contact-section input[type=text],
+  .contact-section input[type=email], 
+  .contact-section select, 
+  .contact-section textarea {
   width: 100%; 
   padding: 12px;  
   border: 1px solid #ccc; 
@@ -815,7 +725,7 @@ textarea {
   resize: vertical 
 }
 
-.homepage-contact-section input[type=submit] {
+.contact-section input[type=submit] {
   background-color: #023a5e;
   color: white;
   padding: 12px 20px;
@@ -824,15 +734,10 @@ textarea {
   cursor: pointer;
 }
 
-.homepage-contact-section input[type=submit]:hover {
+.contact-section input[type=submit]:hover {
   background-color: #02304d;
 }
-/* end of homepage contact form */
-
-
-
-
-
+/* end of  contact form */
 
 
 
@@ -936,13 +841,6 @@ footer .highlight{
     color:white;
   }
 
-
-
-
-
-
-
-  
   @media (max-width: 1200px) { 
   .education, 
   .skills,
