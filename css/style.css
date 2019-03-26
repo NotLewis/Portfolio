@@ -449,6 +449,36 @@ max-width:100%;
   }
   
 
+
+/* check out my github */
+  .project-more{
+    background: #eeeeee;
+    text-align: center;
+    padding: 7rem 0;
+    font-size: 25px;
+
+  }
+  
+  
+  .project-more p {
+    display: block;
+    width:90%;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: #222;
+  }
+
+  .project-more .github {
+font-size:60px;
+  }
+
+
+
+
+
+
+
+
 /*LATEST BLOGS */
 .blog-flex {
   display: flex;
